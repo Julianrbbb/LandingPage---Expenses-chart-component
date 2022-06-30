@@ -1,6 +1,6 @@
 const CuerpoTabla = document.querySelector('.cuerpo__grafico__tablas')
 
-const archivo = fetch("../data.json").then(response => {
+const archivo = fetch("https://julianrbbb.github.io/LandingPage---Expenses-chart-component/data.json").then(response => {
     return response.json()
 }).then(values => {
     values.forEach(v => {
