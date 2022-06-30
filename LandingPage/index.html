@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Expenses chart component</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="contenido">
+    <nav class="balance">
+      <section class="balance__titulo">
+        <span class="balance__titulo__titulo">My balance</span>
+        <span class="balance__titulo__precio">$921.48</span>
+      </section>
+      <section class="balance__icono">
+        <img src="./images/logo.svg">
+      </section>
+    </nav>
+    <main class="cuerpo">
+      <section class="cuerpo__grafico">
+        <h1 class="cuerpo__grafico__titulo">Spending - Last 7 days</h1>
+        <div class="cuerpo__grafico__tablas">
+        </div>
+      </section>
+      <hr class="cuerpo__separador">
+      <section class="cuerpo__footer">
+        <div class="cuerpo__footer__mount">
+          <span class="cuerpo__footer__mount__titulo">Total this month</span>
+          <span class="cuerpo__footer__mount__precio">$478.33</span>
+        </div>
+        <div class="cuerpo__footer__last">
+          <span class="cuerpo__footer__last__precio">+2.4%</span>
+          <span class="cuerpo__footer__last__titulo">from last month</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./js/tablas.js"></script>
+</body>
+</html>

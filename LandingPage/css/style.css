@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --DM-Sans: 'DM Sans', sans-serif;
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+    --font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--DM-Sans);
+    font-weight: 400;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--Cream);
+}
+
+.balance {
+    display: flex;
+    min-width: 337.5px;
+    height: 95px;
+    background: var(--Soft-red);
+    border-radius: 6px;
+}
+
+.balance__titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 50%;
+    padding: 17px 12px;
+}
+
+.balance__titulo span {
+    color: var(--Very-pale-orange)
+}
+
+.balance__titulo__precio {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.balance__titulo__titulo {
+    font-size: 0.8em;
+}
+
+.balance__icono {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 337.5px;
+    background: var(--Very-pale-orange);
+    border-radius: 6px;
+    margin-top: 16px;
+    padding: 17px 12px;
+}
+
+.cuerpo__grafico{
+    display: flex;
+    flex-direction: column;
+}
+
+.cuerpo__grafico__titulo{
+    color: var(--Dark-brown);
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.cuerpo__grafico__tablas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuerpo__grafico__tablas__t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 32px;
+}
+
+.cuerpo__grafico__tablas__t__columna{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.cuerpo__grafico__tablas__t__columna:hover{
+    cursor: pointer;
+}
+
+.cuerpo__grafico__tablas__t__valor{
+    display:flex;
+    position: relative;
+    background: var(--Dark-brown);
+    color: var(--Very-pale-orange);
+    width: 47px;
+    height: 23px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.cuerpo__grafico__tablas__t__dia{
+    color:var(--Medium-brown)
+}
+
+.cuerpo__separador{
+    margin: 30px 0;
+    background: var(--Medium-brown);
+}
+
+.cuerpo__footer{
+    display: flex;
+    justify-content:space-between
+}
+
+.cuerpo__footer__mount{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.cuerpo__footer__mount__titulo{
+    font-size: 0.9em;
+    color: var(--Medium-brown)
+}
+
+.cuerpo__footer__mount__precio{
+    font-size: 1.7em;
+    font-weight: 700;
+    color: var(--Dark-brown);
+}
+
+.cuerpo__footer__last{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.cuerpo__footer__last__precio{
+    color: var(--Dark-brown);
+    font-weight: 700;
+}
+
+.cuerpo__footer__last__titulo{
+    color: var(--Medium-brown)
+}
+
+.active {
+    opacity: 0.8;
+}
+
+.columna__color__secundario{
+    background: var(--Soft-red);
+}
+
+.columna__color__primario{
+    background: var(--Cyan);
+}
+
+@media only screen and (min-width: 1440px) {
+    .balance {
+        min-width: 480px;
+        height: 95px;
+        border-radius: 15px;
+    }
+
+    .balance__titulo {
+        padding: 17px 38px;
+    }
+
+    .cuerpo {
+        min-width: 480px;
+        border-radius: 15px;
+        padding: 17px 38px 33px 38px;
+    }
+
+    .cuerpo__grafico__tablas__t {
+        width: 43px;
+    }
+
+    .cuerpo__grafico__tablas__t__columna{
+        border-radius: 5px;
+    }
+
+    .cuerpo__grafico__tablas__t__valor{
+        width: 70px;
+        height: 30px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        font-size: 17px;
+    }
+
+    .cuerpo__separador{
+        margin: 25px 0;
+        background: var(--Medium-brown);
+    }
+
+    .cuerpo__footer__mount__titulo{
+        font-size: 0.9em;
+        color: var(--Medium-brown)
+    }
+    
+    .cuerpo__footer__mount__precio{
+        font-size: 2.2em;
+        font-weight: 700;
+        color: var(--Dark-brown);
+    }
+
+    .balance__icono {
+        padding-right: 38px;
+    }
+}
